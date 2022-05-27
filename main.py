@@ -52,7 +52,7 @@ def main():
         else:
             if img.shape[1] != img.shape[2]:
                 minshape = np.min(img.shape)
-                img = img[:, minshape, :minshape]
+                img = img[:, :minshape, :minshape]
             xdims = (img.shape[1], img.shape[2])
 
         # load or create point spread function

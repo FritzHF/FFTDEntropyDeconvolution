@@ -43,6 +43,7 @@ def main():
             print("!! Failed to read image "+read_image_path)
             continue
         # correct shape if image not quadratic
+        print (img.shape)
         if img.ndim == 2:
             if img.shape[0] != img.shape[1]:
                 minshape = np.min(img.shape)

@@ -1,7 +1,7 @@
 import numpy as np
-import skimage
+#import skimage
 from scipy import ndimage
-from matplotlib import pyplot as plt
+#from matplotlib import pyplot as plt
 
 
 def convert_to_uint(imf):
